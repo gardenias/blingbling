@@ -1,0 +1,187 @@
+= Repapering for Mac workstation
+
+There are so many helpfully softwares for different platform. Pls just install and enjoy. every one I deeply used.
+
+== commands
+1. all mac commands: https://ss64.com/osx/
+
+== terminal
+1. iTerm2:
+
+    `brew cask install iterm2`
+
+2. ohMyZsh:
+
+    `sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
+
+3. Syntax highlighting: `brew install zsh-syntax-highlighting`
+4. zsh-autosuggestions: `brew install zsh-autosuggestions`
+5. https://github.com/zsh-users[zsh-users] - Zsh community projects
+6. Theme:
+** https://github.com/bhilburn/powerlevel9k/wiki/Show-Off-Your-Config[powerlevel9k]
+** https://draculatheme.com/[draculatheme]
+7. https://github.com/powerline/fonts[fonts] - Patched fonts for Powerline users.
+8. https://github.com/jakubroztocil/httpie[httpie] image:https://img.shields.io/github/stars/jakubroztocil/httpie.svg?style=for-the-badge&colorB=RED&label=STARTS[stars]   +
+Modern command line HTTP client – user-friendly curl alternative with intuitive UI, JSON support, syntax highlighting, wget-like downloads, extensions, etc. https://twitter.com/clihttp https://httpie.org
+9. https://github.com/eliangcs/http-prompt/[http-prompt] image:https://img.shields.io/github/stars/eliangcs/http-prompt.svg?style=for-the-badge&colorB=GREEN&label=STARTS[stars] +
+HTTP Prompt is an interactive command-line HTTP client featuring autocomplete and syntax highlighting.
+10. https://github.com/emre/storm[storm] image:https://img.shields.io/github/stars/emre/storm.svg?style=for-the-badge&colorB=YELLOW&label=STARTS[stars]   +
+Manage your SSH like a boss.
+11. https://github.com/sharkdp/fd[sharkdp/fd] image:https://img.shields.io/github/stars/sharkdp/fd.svg?style=for-the-badge&colorB=BLUE&label=STARTS[stars]   +
+A simple, fast and user-friendly alternative to 'find'
+12. https://github.com/skywind3000/z.lua[skywind3000/z.lua] image:https://img.shields.io/github/stars/skywind3000/z.lua.svg?style=for-the-badge&colorB=BLUE&label=STARTS[stars] + A new cd command that helps you navigate faster by learning your habits
+
+== Benchmarking
+
+== Package Manager
+1. https://gofi.sh/index.html[GoFish] -  is a cross-platform systems package manager, bringing the ease of use of Homebrew to Linux and Windows.
+
+== RVM
+- https://sdkman.io/[SDKMAN] - The Software Development Kit Manager,is a tool for managing parallel versions of multiple Software Development Kits on most Unix based systems. It provides a convenient Command Line Interface (CLI) and API for installing, switching, removing and listing Candidates. Formerly known as GVM the Groovy enVironment Manager, it was inspired by the very useful https://rvm.io/[RVM] and https://github.com/sstephenson/rbenv[rbenv] tools, used at large by the Ruby community. Get started now!  `$ curl -s "https://get.sdkman.io" | bash`
+- https://github.com/creationix/nvm[NVP] -  Node Version Manager - Simple bash script to manage multiple active node.js versions.
+- https://github.com/pyenv/pyenv[pyenv/pyenv] - Simple Python version management
+
+== Go
+
+== Java
+
+== Python
+
+- https://www.anaconda.com/download/#macos[Anaconda] - The Most Popular Python Data Science Platform,Conda is a powerful package manager and environment manager that you use with command line commands at the Anaconda Prompt  https://conda.io/docs/user-guide/getting-started.html[Docs]
+* https://repo.anaconda.com/archive/Anaconda3-5.2.0-MacOSX-x86_64.pkg[64-Bit Graphical Installer (613 MB)]
+* https://repo.anaconda.com/archive/Anaconda3-5.2.0-MacOSX-x86_64.sh[64-Bit Command-Line Installer (523 MB)]
+
+==== Install Information
+* `brew install python`
+* export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+
+```
+Python has been installed as
+  /usr/local/bin/python3
+
+Unversioned symlinks `python`, `python-config`, `pip` etc. pointing to
+`python3`, `python3-config`, `pip3` etc., respectively, have been installed into
+  /usr/local/opt/python/libexec/bin
+
+If you need Homebrew's Python 2.7 run
+  brew install python@2
+
+You can install Python packages with
+  pip3 install <package>
+They will install into the site-package directory
+  /usr/local/lib/python3.7/site-packages
+
+See: https://docs.brew.sh/Homebrew-and-Python
+```
+
+
+== Mac terminal
+
+1. gofish
+
+    `curl -fsSL https://raw.githubusercontent.com/fishworks/gofish/master/scripts/install.sh | bash; gofish init`
+
+
+
+== Develop
+
+* https://github.com/localtunnel/localtunnel[localtunnel] image:https://img.shields.io/github/stars/localtunnel/localtunnel.svg?style=for-the-badge&colorB=BLUE&label=STARTS[stars]   +
+Expose yourself to the world
+
+== Desktop
+
+* lolcat
+* figlet
+* cowsay
+* http://byobu.co/[Byobu] - is a GPLv3 open source text-based window manager and terminal multiplexer.
+* https://github.com/jingweno/ccat[ccat] -  is the colorizing cat. It works similar to cat but displays content with syntax highlighting.
+* https://github.com/chrisallenlane/cheat[cheat] - cheat allows you to create and view interactive cheatsheets on the command-line. It was designed to help remind *nix system administrators of options for commands that they use frequently, but not frequently enough to remember.
+* https://github.com/pindexis/marker[pindexis/marker] - is a command palette for the terminal. It lets you bookmark commands (or commands templates) and easily retreive them with the help of a real-time fuzzy matcher.
+* https://github.com/tldr-pages/tldr[tldr] - Simplified and community-driven man pages http://tldr-pages.github.io/
+* https://asciinema.org/[asciinema] - Record and share your terminal sessions, the right way.
+* https://github.com/edenhill/kafkacat[edenhill/kafkacat] image:https://img.shields.io/github/stars/edenhill/kafkacat.svg?style=for-the-badge&colorB=PURPLE&label=kafkacat[stars] - Generic command line non-JVM Apache Kafka producer and consumer
+
+
+https://github.com/sshconfigio/sshconfigio.github.io#remote-copy
+
+https://github.com/alebcay/awesome-shell
+https://www.tecmint.com/20-funny-commands-of-linux-or-linux-is-fun-in-terminal/
+https://www.tecmint.com/linux-funny-commands/
+https://www.tecmint.com/play-with-word-and-character-counts-in-linux/
+https://www.tecmint.com/free-online-linux-learning-guide-for-beginners/
+https://www.tecmint.com/play-with-word-and-character-counts-in-linux/
+
+
+
+brew install goenv
+
+
+- autojump
+- brew install m-cli
+- brew install ttygif
+- brew cask install insomnia
+- [spot](https://github.com/rauchg/spot) : Tiny file search utility
+- brew install [shml](https://odb.github.io/shml/)
+- [Fasd](https://github.com/clvv/fasd):is a command-line productivity booster. Fasd offers quick access to files and directories for POSIX shells. It is inspired by tools like autojump, z and v. Fasd keeps track of files and directories you have accessed, so that you can quickly reference them in the command line.
+  ```shell
+  a='fasd -a'
+  d='fasd -d'
+  f='fasd -f'
+  s='fasd -si'
+  sd='fasd -sid'
+  sf='fasd -sif'
+  z='fasd_cd -d'
+  zz='fasd_cd -d -i'
+  ```
+- [borg](https://github.com/ok-borg/borg) - Search and save shell snippets without leaving your terminal
+- [up](https://github.com/shannonmoeller/up) - Quickly navigate to a parent directory via tab-completion
+- [thefuck](https://github.com/nvbn/thefuck) - Magnificent app which corrects your previous console command.
+- [./jq](https://stedolan.github.io/jq/) - is like sed for JSON data - you can use it to slice and filter and map and transform structured data with the same ease that sed, awk, grep and friends let you play with text
+- [lsp](https://github.com/dborzov/lsp) - lsp is like ls command but more human-friendly
+- [htop](https://github.com/hishamhm/htop) -  is an interactive text-mode process viewer for Unix systems. It aims to be a better 'top'.
+
+
+asdf plugin add solidity; \
+asdf plugin add scala ; \
+asdf plugin add sbt ; \
+asdf plugin add redis-cli ; \
+asdf plugin add python ; \
+asdf plugin add nodejs ; \
+asdf plugin add lazygit ; \
+asdf plugin add jmeter ; \
+asdf plugin-add jq https://github.com/jimmidyson/asdf-gojq.git
+asdf plugin add ghq https://github.com/kajisha/asdf-ghq; \
+asdf plugin add yq https://github.com/sudermanjr/asdf-yq.git; \
+asdf plugin add asdf-alias https://github.com/andrewthauer/asdf-alias.git
+asdf plugin add yj; \
+asdf plugin add yarn; \
+asdf plugin add websocat; \
+asdf plugin add btrace; \
+asdf plugin add cheat; \
+asdf plugin add erlang
+asdf plugin add fd
+asdf plugin add fzf
+
+
+
+
+asdf install ghq latest; \
+asdf install yq latest; \
+asdf install asdf-alias latest; \ 
+asdf install yj latest; \
+asdf install websocat latest; \
+asdf install btrace latest; \
+asdf install cheat latest; \
+asdf install redis-cli  latest; \
+asdf install nodejs  latest; \
+asdf install lazygit  latest; \
+asdf install jmeter  latest; \
+asdf install jq latest
+
+
+brew install ctop
+brew install navi
+brew install mr   // https://myrepos.branchable.com/install/
+
+
+brew install bat

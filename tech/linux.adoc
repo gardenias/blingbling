@@ -1,0 +1,85 @@
+[[linux]]
+= Linux Commands
+
+== Usage
+1. cpu: `lscpu`, `cat /proc/cpuinfo`
+1. memory: `free -h`, `cat /proc/meminfo `
+1. memory device: `dmidecode -t memory`
+1. disk: `lsblk`, `fdisk -l`
+1. network interface device: `lspci | grep -i 'eth`, `ifconfig -a`, `ethtool eth0`
+
+    ```
+    ethtool eth0
+    Settings for eth0:
+        Supported ports: [ TP MII ]
+        Supported link modes:   10baseT/Half 10baseT/Full
+                                100baseT/Half 100baseT/Full
+                                1000baseT/Half 1000baseT/Full #支持千兆半双工，全双工模式
+        Supported pause frame use: No
+        Supports auto-negotiation: Yes #支持自适应模式，一般都支持
+        Advertised link modes:  10baseT/Half 10baseT/Full
+                                100baseT/Half 100baseT/Full
+                                1000baseT/Half 1000baseT/Full
+        Advertised pause frame use: Symmetric Receive-only
+        Advertised auto-negotiation: Yes #默认使用自适应模式
+        Link partner advertised link modes:  10baseT/Half 10baseT/Full
+                                            100baseT/Half 100baseT/Full
+        .....
+        Speed: 100Mb/s #现在网卡的速度是100Mb,网卡使用自适应模式，所以推测路由是100Mb，导致网卡从支持千兆，变成要支持百兆
+        Duplex: Full   #全双工
+        .....
+        Link detected: yes    #表示有网线连接，和路由是通的
+
+    ```@
+
+1. pci: `lspci [-v|-vv|-t]`
+1. bios: `dmidecode -t bios`, `dmidecode -q`
+
+== The nohup command
+
+1. `$ nohup myLongRunningJob.sh &`
+2. `$ java -jar myJar.jar >/dev/null 2>&1 &`
+
+== Network
+
+* http://srparish.net/scripts/[nettop] shows packet types, sorts by either size or number of packets.
+* http://ettercap.sf.net/[ettercap] is a network sniffer/interceptor/logger for ethernet
+* http://purl.org/net/darkstat/[darkstat] breaks down traffic by host, protocol, etc. Geared towards analysing traffic gathered over a longer period, rather than `live' viewing.
+* http://ex-parrot.com/~pdw/iftop/[iftop] shows network traffic by service and host
+* http://gael.roualland.free.fr/ifstat/[ifstat] shows network traffic by interface in a vmstat/iostat-like manner
+* https://github.com/akshayKMR/hogwatch[hogwatch] A bandwidth monitor(per process) with graphs for desktop/web.
+* https://github.com/Microsoft/Ethr[Microsoft/ethr] image:https://img.shields.io/github/stars/Microsoft/ethr.svg?style=for-the-badge&colorB=BLUE&label=STARTS[stars]-  is a Network Performance Measurement Tool for TCP, UDP & HTTP.
+
+=== iptables
+
+1.  IP tables
+    $ sudo iptables -I INPUT -s 172.18.4.44 -j DROP
+    $ sudo iptables -D INPUT -s 172.18.4.44 -j DROP
+
+
+=== nmap
+
+=== netcat
+
+* http://netcat.sourceforge.net/[here]
+
+=== iftop
+
+== System
+
+* http://hisham.hm/htop/[htop] - This is htop, an interactive process viewer for Unix systems. It is a text-mode application (for console or X terminals) and requires ncurses.
+
+* http://dag.wiee.rs/home-made/dstat/[dstat] - Dstat is a versatile replacement for vmstat, iostat, netstat and ifstat. Dstat overcomes some of their limitations and adds some extra features, more counters and flexibility. Dstat is handy for monitoring systems during performance tuning tests, benchmarks or troubleshooting.
+* iostat –x 1
+
+== Find & Grep
+* grep content by file type: `find . -name *.py|xargs grep asdf`
+
+== awk
+* awk 'BEGIN{sum=0}{sum+=$8}END{print sum}'
+
+== echo
+* echo $(($(date +%s%N)/1000000))
+
+== gradle
+* ./gradlew -x test build -P systemProp.http.proxyHost=localhost -P systemProp.http.proxyPort=3129

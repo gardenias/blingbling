@@ -1,0 +1,11 @@
+= Notes for work
+
+Welcome to the this documentation!
+
+[horizontal]
+<<agenda.adoc#agenda,Agenda>> :: My Work Journal
+<<huobi.adoc#hb,Huobi>> :: The Financial Hub of Digital Assets
+Provide secure and reliable digital asset trading and asset management services to millions of users in over 130 countries around the world.
+<<hazelcast.adoc#hz,Hazelcast>> :: Hazelcast IMDG, the Operational In-Memory Computing Platform
+<<clearing.adoc#hb_clearing,Clearing>> :: 清算系统
+<<perpetual-swap.adoc#hb_perpetual_swap,Perpetual>> :: 永续合约

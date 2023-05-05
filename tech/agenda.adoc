@@ -1,0 +1,7 @@
+= 工作计划
+:toc: left
+:toclevels: 3
+:tabsize: 4
+:docinfo1:
+
+include::agenda/2019.adoc[leveloffset=+1]
