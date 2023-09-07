@@ -5,3 +5,11 @@
 === Testing
 1. https://github.com/jsonzou/jmockdata[jmockdata] image:https://img.shields.io/github/stars/jsonzou/jmockdata.svg?style=for-the-badge&colorB=BLUE&label=STARTS[stars] - The plugin to mock the java data by random.
 
+1. https://github.com/jobbole/awesome-java-cn[jobbole/awesome-java-cn] - Java资源大全中文版，包括开发库、开发工具、网站、博客、微信、微博等，由伯乐在线持续更新。
+
+1. https://github.com/atinfo/awesome-test-automation[atinfo/awesome-test-automation] - A curated list of awesome test automation frameworks, tools, libraries, and software for different programming languages. Sponsored by
+1. https://github.com/iluwatar/java-design-patterns
+1. https://github.com/unruledboy/DevelopmentStack - System development basics, analysis, project/planning, documentation, wireframe/mockup, design/modeling, implementation, quality, management, build, testing, deployment, maintenance, troubleshooting, learning
+1. https://github.com/ossu/computer-science - Path to a free self-taught education in Computer Science!
+
+1. https://github.com/donnemartin/system-design-primer - About Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.
